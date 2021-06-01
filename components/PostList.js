@@ -12,6 +12,7 @@ export default function PostList({ posts }) {
             return (
               <li key={post.slug}>
                 {post.frontmatter.date}: {` `}
+		{post?.frontmatter?.tags}{`   `}
                 <Link href={{ pathname: `/post/${post.slug}` }}>
                   <a>{post?.frontmatter?.title}</a>
                 </Link>

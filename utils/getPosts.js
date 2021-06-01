@@ -1,5 +1,7 @@
 import matter from 'gray-matter'
 
+// getPostOfDirectory(directoryName, context)
+
 const getPosts = (context) => {
   const keys = context.keys()
   const values = keys.map(context)
